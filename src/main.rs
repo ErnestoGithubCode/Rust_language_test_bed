@@ -1,3 +1,9 @@
+extern crate exit_code;
+
 fn main() {
-    println!("Hello, World!!!!!!!!");
+    use std::process::exit;
+    use exit_code::SUCCESS;
+
+    println!("Hello, World!");
+    exit(SUCCESS);
 }
