@@ -1,8 +1,7 @@
 [package]
-name = "hello"
-version = "0.1.0"
-authors = ["ubuntu"]
-edition = "2018"
+name = "hello_world" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+authors = ["Alice <a@example.com>", "Bob <b@example.com>"]
 
 [dependencies]
-exit-code = "1.0.0"
+#exit-code = "1.0.0"
