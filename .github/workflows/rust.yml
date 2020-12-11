@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: cargo run --bin
+      run: cargo new Rust_language_test_bed --bin
     - name: Run tests
       run: cargo test --verbose
     
