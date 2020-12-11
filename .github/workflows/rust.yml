@@ -2,12 +2,9 @@ name: Rust
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
-
-env:
-  CARGO_TERM_COLOR: always
+    branches: [ master ]
 
 jobs:
   build:
@@ -17,6 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: cargo new Rust_language_test_bed --bin
-    - name: Run tests
+      run: cargo build --verbose
+    - name: Run
+      run: cargo run
     
