@@ -19,5 +19,4 @@ jobs:
     - name: Build
       run: cargo new Rust_language_test_bed --bin
     - name: Run tests
-      run: cargo test --verbose
     
